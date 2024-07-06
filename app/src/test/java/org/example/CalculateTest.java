@@ -23,6 +23,7 @@ public class CalculateTest {
     Calculate calculate = new Calculate();
     int expected = 55;
     assertEquals(expected, calculate.SumAtoB(1, 10));
+    assertEquals(expected, calculate.SumAtoB(10, 1));
   }
 
   @Test
@@ -30,6 +31,7 @@ public class CalculateTest {
     Calculate calculate = new Calculate();
     double expected = 5.5;
     assertEquals(expected, calculate.AveAtoB(1, 10), 0);
+    assertEquals(expected, calculate.AveAtoB(10, 1), 0);
   }
 
   @Test
@@ -37,6 +39,7 @@ public class CalculateTest {
     Calculate calculate = new Calculate();
     int expected = 25;
     assertEquals(expected, calculate.OddAtoB(1, 10));
+    assertEquals(expected, calculate.OddAtoB(10, 1));
   }
 
   @Test
@@ -44,6 +47,7 @@ public class CalculateTest {
     Calculate calculate = new Calculate();
     int expected = 30;
     assertEquals(expected, calculate.EvenAtoB(1, 10));
+    assertEquals(expected, calculate.EvenAtoB(10, 1));
   }
 
   @Test
