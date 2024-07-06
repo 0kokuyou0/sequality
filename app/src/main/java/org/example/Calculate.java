@@ -10,6 +10,11 @@ public class Calculate {
   }
 
   public int SumAtoB(int x, int y) {
+    if (x > y) {
+      int tmp = x;
+      x = y;
+      y = tmp;
+    }
     int sum = 0;
     for (int i = x; i < y + 1; i++) {
       sum = this.Sum((int) sum, i);
@@ -18,6 +23,11 @@ public class Calculate {
   }
 
   public double AveAtoB(int x, int y) {
+    if (x > y) {
+      int tmp = x;
+      x = y;
+      y = tmp;
+    }
     int sum = 0;
     for (int i = x; i < y + 1; i++) {
       sum = this.Sum((int) sum, i);
@@ -26,6 +36,11 @@ public class Calculate {
   }
 
   public int OddAtoB(int x, int y) {
+    if (x > y) {
+      int tmp = x;
+      x = y;
+      y = tmp;
+    }
     int odd = 0;
     for (int i = x; i < y + 1; i++) {
       if (i % 2 == 1) {
@@ -36,6 +51,11 @@ public class Calculate {
   }
 
   public int EvenAtoB(int x, int y) {
+    if (x > y) {
+      int tmp = x;
+      x = y;
+      y = tmp;
+    }
     int even = 0;
     for (int i = x; i < y + 1; i++) {
       if (i % 2 == 0) {
@@ -44,8 +64,5 @@ public class Calculate {
     }
     return even;
   }
-
-
-
 
 }
