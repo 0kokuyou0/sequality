@@ -4,11 +4,22 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+  public String getGreeting() {
+    return "Hello World!";
+  }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
+  public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
+    Calculate calc = new Calculate();
+    int a = 2, b = 3;
+    System.out.println(
+        "Sum of " + a + " and " + b + " is " + (int) calc.Sum(a, b) + ". Average is " + calc.Ave(a, b));
+
+    int c = 1, d = 10;
+    System.out.println("Sum of " + c + " to " + d + " is " + calc.SumAtoB(c, d) + ".Average is "
+        + calc.AveAtoB(c, d));
+
+    System.out.println(
+        "Sum of odd of " + c + " to " + d + " is " + calc.OddAtoB(c, d) + ". Sum of even is " + calc.EvenAtoB(c, d));
+  }
 }
