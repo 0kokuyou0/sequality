@@ -46,4 +46,18 @@ public class CalculateTest {
     assertEquals(expected, calculate.EvenAtoB(1, 10));
   }
 
+  @Test
+  public void testOddAtoBWithEvenNumbers() {
+    Calculate calculate = new Calculate();
+    int expected = 0; // 2から2までには奇数がないため結果は0になる
+    assertEquals(expected, calculate.OddAtoB(2, 2));
+  }
+
+  @Test
+  public void testEvenAtoBWithOddNumbers() {
+    Calculate calculate = new Calculate();
+    int expected = 0; // 1から1までには偶数がないため結果は0になる
+    assertEquals(expected, calculate.EvenAtoB(1, 1));
+  }
+
 }
